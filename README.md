@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Kunal Janak Sanghvi!
+# Hi, I'm Kunal Sanghvi!
 
 🎓 **Master's in Information Systems** (Data Science & Project Management) | Pace University  
 📍 **Jersey City, NJ**  
@@ -82,18 +82,11 @@ Let's play a quick game! Below are some clues about technologies or programming 
 - **Tools:** IntelliJ, Maven, GitHub, Jenkins, SonarQube, Fortify, Anaconda
 - **Project Management:** Agile, Waterfall, Jira, Kanban, MS Project, Asana, Trello
 
----
-
-## 📊 GitHub Stats
-
-![Kunal's GitHub stats](https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=radical)
 
 ---
 
 ## 🌐 Let's Connect!
 
 - [LinkedIn](#)
-- [Twitter](#)
 - [Portfolio](#)
 
