@@ -1,57 +1,22 @@
 # Hi, I'm Kunal Sanghvi!
 
 🎓 **Master's in Information Systems** (Data Science & Project Management) | Pace University  
-📍 **Jersey City, NJ**  
-📧 [sanghvikunal1998@gmail.com](mailto:sanghvikunal@gmail.com) | 📱 (551) 325-8202  
+📍 **New York, NY**  
+📧 [sanghvikunal1998@gmail.com](mailto:sanghvikunal1998@gmail.com) | 📱 +1 (551) 325-8202  
 🔗 [LinkedIn](https://www.linkedin.com/in/kunalsanghvii/)  
 
 ---
 
-<div style="background-color:#f0f8ff; padding: 20px; border-radius: 10px;">
-
 ## 🚀 About Me
 
-I'm a **Software Engineer & Product Management Intern** currently pursuing my Master's in Information Systems at Pace University. With a solid foundation in **Electronics and Telecommunications Engineering**, I bring a blend of technical expertise and project management skills to the table. My passion lies in harnessing data science and machine learning to solve complex problems and create impactful solutions.
-
-</div>
-
----
-
-<div style="background-color:#fdfd96; padding: 20px; border-radius: 10px;">
-
-## 🎮 Guess the Technology!
-
-Let's play a quick game! Below are some clues about technologies or programming languages I work with. Can you guess what they are?
-
-1. **I'm a backend language known for my coffee-inspired name.**  
-   - **Hint:** I'm object-oriented and popular in enterprise environments.
-   - **Answer:** <!-- Scroll down to see the answer or click [here](#answers)! -->
-
-2. **I make data science a breeze with my high-level syntax and vast libraries.**  
-   - **Hint:** I'm often used for machine learning and data visualization.
-   - **Answer:** 
-
-3. **I'm a cloud platform that's known for my scalability and integration with other services.**  
-   - **Hint:** I have "cloud" in my name and am offered by a popular search engine company.
-   - **Answer:** 
-
-<details>
-  <summary>Click here to reveal the answers!</summary>
-  
-  1. Java
-  2. Python
-  3. Google Cloud Platform
-
-</details>
-
-</div>
+I'm currently pursuing a Master's in Information Systems at Pace University, I leverage my background in Electronics and Telecommunications Engineering to deliver impactful solutions. My expertise spans data science, machine learning, and backend development, honed through my experience as a Java backend developer at Tata Consultancy Services. I thrive on using data-driven insights to solve complex problems and am eager to contribute my technical and project management skills to new challenges.
 
 ---
 
 ## 💼 Experience
 
 ### Rebel, New York, NY | Software Engineer & Product Management Intern  
-*May 2024 – Present*  
+*May 2024 – August 2024*  
 - Led a team of 6 developers to create SQL-based table structures for community product models.
 - Integrated API views with Postman, contributing to both backend and frontend development for a Spotify-like platform.
 
@@ -90,7 +55,34 @@ Let's play a quick game! Below are some clues about technologies or programming 
 - **Tools:** IntelliJ, Maven, GitHub, Jenkins, SonarQube, Fortify, Anaconda
 - **Project Management:** Agile, Waterfall, Jira, Kanban, MS Project, Asana, Trello
 
+---
 
+## 🎮 Guess the Technology!
+
+Let's play a quick game! Below are some clues about technologies or programming languages I work with. Can you guess what they are?
+
+1. **I'm a backend language known for my coffee-inspired name.**  
+   - **Hint:** I'm object-oriented and popular in enterprise environments.
+   - **Answer:** <!-- Scroll down to see the answer or click [here](#answers)! -->
+
+2. **I make data science a breeze with my high-level syntax and vast libraries.**  
+   - **Hint:** I'm often used for machine learning and data visualization.
+   - **Answer:** 
+
+3. **I'm a cloud platform that's known for my scalability and integration with other services.**  
+   - **Hint:** I have "cloud" in my name and am offered by a popular search engine company.
+   - **Answer:** 
+
+<details>
+  <summary>Click here to reveal the answers!</summary>
+  
+  1. Java
+  2. Python
+  3. Google Cloud Platform
+
+</details>
+
+---
 
 ## 🌐 Let's Connect!
 
