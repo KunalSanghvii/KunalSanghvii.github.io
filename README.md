@@ -2,16 +2,22 @@
 
 🎓 **Master's in Information Systems** (Data Science & Project Management) | Pace University  
 📍 **Jersey City, NJ**  
-📧 [kunalsanghavi08@gmail.com](mailto:kunalsanghavi08@gmail.com) | 📱 (551) 325-8202  
+📧 [sanghvikunal1998@gmail.com](mailto:sanghvikunal@gmail.com) | 📱 (551) 325-8202  
 🔗 [LinkedIn](https://www.linkedin.com/in/kunalsanghvii/)  
 
 ---
+
+<div style="background-color:#f0f8ff; padding: 20px; border-radius: 10px;">
 
 ## 🚀 About Me
 
 I'm a **Software Engineer & Product Management Intern** currently pursuing my Master's in Information Systems at Pace University. With a solid foundation in **Electronics and Telecommunications Engineering**, I bring a blend of technical expertise and project management skills to the table. My passion lies in harnessing data science and machine learning to solve complex problems and create impactful solutions.
 
+</div>
+
 ---
+
+<div style="background-color:#fdfd96; padding: 20px; border-radius: 10px;">
 
 ## 🎮 Guess the Technology!
 
@@ -37,6 +43,8 @@ Let's play a quick game! Below are some clues about technologies or programming 
   3. Google Cloud Platform
 
 </details>
+
+</div>
 
 ---
 
@@ -83,7 +91,6 @@ Let's play a quick game! Below are some clues about technologies or programming 
 - **Project Management:** Agile, Waterfall, Jira, Kanban, MS Project, Asana, Trello
 
 
----
 
 ## 🌐 Let's Connect!
 
