@@ -17,17 +17,21 @@ I'm currently pursuing a Master's in Information Systems at Pace University, I l
 
 ### Rebel, New York, NY | Software Engineer & Product Management Intern  
 *May 2024 – August 2024*  
-- Led a team of 6 developers to create SQL-based table structures for community product models.
-- Integrated API views with Postman, contributing to both backend and frontend development for a Spotify-like platform.
+I led a team of six developers in designing and implementing key schema structures for community product models, which were essential for our platform's success. I also played a major role in integrating API views with Postman, contributing to both backend and frontend development for a platform similar to Spotify. This project required solving complex problems, and I ensured that our solutions were both effective and scalable, improving the overall performance and user experience.
 
 ### Tata Consultancy Services, Mumbai, India | Systems Engineer  
 *April 2021 – November 2022*  
-- Developed Java-based business framework plugins and implemented Spring Boot dataflow jobs for database migration, achieving a 70% performance boost.
-- Utilized DAGs in Google Cloud Platform to generate customer profiles, reducing support tickets by 45%.
+As a skilled Java Backend Developer, I have made significant contributions to enhancing business frameworks by solving complex problems and optimizing processes. My expertise includes developing intricate plug-ins, designing dataflow jobs using Spring Boot for seamless database migration, and implementing robust encryption and decryption processes with Barricade Encryption. These efforts have driven a notable improvement in business performance.
+I have demonstrated strategic problem-solving by creating over three innovative methodologies for analyzing legacy databases. This involved developing mapping rules tailored to specific business requirements, enabling efficient database searches. I successfully uploaded modified data into Google Cloud ElasticSearch, significantly improving data accessibility and management.
+One of my standout achievements is leveraging Directed Acyclic Graphs (DAGs) through Airflow in the Google Cloud platform. This approach led to a remarkable 45% reduction in customer support tickets by efficiently generating customer profiles, showcasing my ability to deliver impactful solutions.
+I excel in dynamic environments where complex challenges require innovative and precise solutions. My experience reflects a dedication to leveraging cutting-edge technologies to drive business success and solve critical problems.
 
 ### Monethics, Mumbai, India | Research & Development/Marketing Strategist  
 *January 2021 – April 2021*  
-- Spearheaded promotional campaigns including direct mail, emails, and online content, expanding the company's reach and profitability.
+Distinguished for my adept management in the realm of marketing, I have orchestrated successful campaigns from conception to execution, leaving an indelible mark on the promotional landscape. As a seasoned professional:
+Led the meticulous planning and execution of comprehensive promotional campaigns encompassing diverse channels. Successfully managed the creation and production of a spectrum of promotional materials, including direct mail, e-mails, online content, video clips, e-blogs, e-books, and company brochures.
+Demonstrated expertise in leveraging cutting-edge technology to expand campaign reach and enhance Marketing ROI. Successfully implemented technology-driven strategies that not only elevated brand visibility but also introduced lucrative new profit streams.
+
 
 ---
 
