@@ -61,11 +61,13 @@ I'm currently pursuing a Master's in Information Systems at Pace University. I l
 <details>
   <summary>Click me to know more!</summary>
   
-- Collaborated in a team of four to develop a predictive model to forecast regional salaries across multiple industries.
-- Cleaned over 1 million data records using Python, identifying influential features for model training and replacing missing values.
-- Trained a Random Forest model using the cleaned salary data, achieving 89% accuracy and an R-squared value of 0.89. This model enabled employers to design competitive salary and compensation packages to attract and retain talent.  
+  - Collaborated in a team of four to develop a predictive model to forecast regional salaries across multiple industries.
+  - Cleaned over 1 million data records using Python, identifying influential features for model training and replacing missing values.
+  - Trained a Random Forest model using the cleaned salary data, achieving 89% accuracy and an R-squared value of 0.89. This model enabled employers to design competitive salary and compensation packages to attract and retain talent.
 
 </details>
+
+
 
 ### British Airways Data Science Job Simulation, The Forage  
 *February 2024*  
@@ -78,6 +80,8 @@ I'm currently pursuing a Master's in Information Systems at Pace University. I l
 
 </details>
 
+
+
 ### Accenture, North America Strategy Consulting Work Simulation, The Forage  
 *December 2023*  
 <details>
@@ -88,6 +92,8 @@ I'm currently pursuing a Master's in Information Systems at Pace University. I l
 - Created correspondence with the manager to track project progress and gather feedback from stakeholders to ensure alignment with client needs.  
 
 </details>
+
+
 
 ### Sports Car Price Analysis using Machine Learning  
 *October 2023 – December 2023*  
