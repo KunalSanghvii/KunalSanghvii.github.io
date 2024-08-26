@@ -58,52 +58,27 @@ I'm currently pursuing a Master's in Information Systems at Pace University. I l
 
 ### NYC Job Market Analysis using Machine Learning Algorithms (Random Forest)  
 *May 2024*  
-<details>
-  <summary>Click me to know more!</summary>
-  
   - Collaborated in a team of four to develop a predictive model to forecast regional salaries across multiple industries.
   - Cleaned over 1 million data records using Python, identifying influential features for model training and replacing missing values.
   - Trained a Random Forest model using the cleaned salary data, achieving 89% accuracy and an R-squared value of 0.89. This model enabled employers to design competitive salary and compensation packages to attract and retain talent.
 
-</details>
-
-
-
 ### British Airways Data Science Job Simulation, The Forage  
 *February 2024*  
-<details>
-  <summary>Click me to know more!</summary>
-  
 - Scraped a webpage to extract customer reviews on BA flights using Python.
 - Analyzed the data in a CSV file using the Python library NLTK to remove unnecessary qualifiers and identify keywords indicating user sentiment.
 - Loaded the cleaned dataset into a Random Forest Regressor model to predict factors influencing customer reviews, achieving 88% predictive accuracy. This analysis enabled the company to develop effective customer retention strategies.  
 
-</details>
-
-
-
 ### Accenture, North America Strategy Consulting Work Simulation, The Forage  
 *December 2023*  
-<details>
-  <summary>Click me to know more!</summary>
-  
 - Evaluated a client brief to identify project priorities and reviewed a government website to develop UX/UI strategies to optimize user experience.
 - Developed a project timeline, Gantt Chart, and user stories to blueprint project deliverables and assign tasks.
-- Created correspondence with the manager to track project progress and gather feedback from stakeholders to ensure alignment with client needs.  
-
-</details>
-
-
+- Created correspondence with the manager to track project progress and gather feedback from stakeholders to ensure alignment with client needs. 
 
 ### Sports Car Price Analysis using Machine Learning  
-*October 2023 – December 2023*  
-<details>
-  <summary>Click me to know more!</summary>
-  
+*October 2023*  
 - Processed over 10,000 data points of luxury vehicle features using Python.
 - Analyzed feature impact on price using R and designed a Random Forest Regressor model, achieving a perfect R-squared (R²) value of 1.00 for precise prediction of luxury sports car prices.  
 
-</details>
 
 ---
 
