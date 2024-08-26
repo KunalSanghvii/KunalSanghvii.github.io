@@ -3,13 +3,13 @@
 🎓 **Master's in Information Systems** (Data Science & Project Management) | Pace University  
 📍 **New York, NY**  
 📧 [sanghvikunal1998@gmail.com](mailto:sanghvikunal1998@gmail.com) | 📱 +1 (551) 325-8202  
-🔗 [LinkedIn](https://www.linkedin.com/in/kunalsanghvii/)  
+🔗 [LinkedIn](https://www.linkedin.com/in/kunalsanghvii/)
 
 ---
 
 ## 🚀 About Me
 
-I'm currently pursuing a Master's in Information Systems at Pace University, I leverage my background in Electronics and Telecommunications Engineering to deliver impactful solutions. My expertise spans data science, machine learning, and backend development, honed through my experience as a Java backend developer at Tata Consultancy Services. I thrive on using data-driven insights to solve complex problems and am eager to contribute my technical and project management skills to new challenges.
+I'm currently pursuing a Master's in Information Systems at Pace University. I leverage my background in Electronics and Telecommunications Engineering to deliver impactful solutions. My expertise spans data science, machine learning, and backend development, honed through my experience as a Java backend developer at Tata Consultancy Services. I thrive on using data-driven insights to solve complex problems and am eager to contribute my technical and project management skills to new challenges.
 
 ---
 
@@ -17,21 +17,27 @@ I'm currently pursuing a Master's in Information Systems at Pace University, I l
 
 ### Rebel, New York, NY | Software Engineer & Product Management Intern  
 *May 2024 – August 2024*  
-I led a team of six developers in designing and implementing key schema structures for community product models, which were essential for our platform's success. I also played a major role in integrating API views with Postman, contributing to both backend and frontend development for a platform similar to Spotify. This project required solving complex problems, and I ensured that our solutions were both effective and scalable, improving the overall performance and user experience.
+
+- Led a team of six developers in designing and implementing key schema structures for community product models.
+- Played a major role in integrating API views with Postman.
+- Contributed to both backend and frontend development for a platform similar to Spotify.
+- Solved complex problems and ensured that solutions were both effective and scalable.
+- Improved overall platform performance and user experience.
+
 
 ### Tata Consultancy Services, Mumbai, India | Systems Engineer  
 *April 2021 – November 2022*  
-As a skilled Java Backend Developer, I have made significant contributions to enhancing business frameworks by solving complex problems and optimizing processes. My expertise includes developing intricate plug-ins, designing dataflow jobs using Spring Boot for seamless database migration, and implementing robust encryption and decryption processes with Barricade Encryption. These efforts have driven a notable improvement in business performance.
-I have demonstrated strategic problem-solving by creating over three innovative methodologies for analyzing legacy databases. This involved developing mapping rules tailored to specific business requirements, enabling efficient database searches. I successfully uploaded modified data into Google Cloud ElasticSearch, significantly improving data accessibility and management.
-One of my standout achievements is leveraging Directed Acyclic Graphs (DAGs) through Airflow in the Google Cloud platform. This approach led to a remarkable 45% reduction in customer support tickets by efficiently generating customer profiles, showcasing my ability to deliver impactful solutions.
-I excel in dynamic environments where complex challenges require innovative and precise solutions. My experience reflects a dedication to leveraging cutting-edge technologies to drive business success and solve critical problems.
+- Developed intricate plug-ins and designed dataflow jobs using Spring Boot for seamless database migration.
+- Implemented robust encryption and decryption processes with Barricade Encryption, boosting business performance.
+- Created over three innovative methodologies for analyzing legacy databases.
+- Successfully uploaded modified data into Google Cloud ElasticSearch, improving data accessibility and management.
+- Leveraged Directed Acyclic Graphs (DAGs) through Airflow in the Google Cloud platform, reducing customer support tickets by 45%.
 
 ### Monethics, Mumbai, India | Research & Development/Marketing Strategist  
 *January 2021 – April 2021*  
-Distinguished for my adept management in the realm of marketing, I have orchestrated successful campaigns from conception to execution, leaving an indelible mark on the promotional landscape. As a seasoned professional:
-Led the meticulous planning and execution of comprehensive promotional campaigns encompassing diverse channels. Successfully managed the creation and production of a spectrum of promotional materials, including direct mail, e-mails, online content, video clips, e-blogs, e-books, and company brochures.
-Demonstrated expertise in leveraging cutting-edge technology to expand campaign reach and enhance Marketing ROI. Successfully implemented technology-driven strategies that not only elevated brand visibility but also introduced lucrative new profit streams.
-
+- Led the planning and execution of comprehensive promotional campaigns across diverse channels.
+- Managed the creation and production of a wide range of promotional materials.
+- Implemented technology-driven strategies to expand campaign reach and enhance Marketing ROI.
 
 ---
 
@@ -45,6 +51,53 @@ Demonstrated expertise in leveraging cutting-edge technology to expand campaign 
 ### Shah & Anchor Kutchhi Engineering College, Mumbai University  
 **Bachelor of Engineering** | Electronics and Telecommunications Engineering  
 *February 2021*
+
+---
+
+## 🛠️ Projects
+
+### NYC Job Market Analysis using Machine Learning Algorithms (Random Forest)  
+*May 2024*  
+<details>
+  <summary>Click me to know more!</summary>
+  
+- Collaborated in a team of four to develop a predictive model to forecast regional salaries across multiple industries.
+- Cleaned over 1 million data records using Python, identifying influential features for model training and replacing missing values.
+- Trained a Random Forest model using the cleaned salary data, achieving 89% accuracy and an R-squared value of 0.89. This model enabled employers to design competitive salary and compensation packages to attract and retain talent.  
+
+</details>
+
+### British Airways Data Science Job Simulation, The Forage  
+*February 2024*  
+<details>
+  <summary>Click me to know more!</summary>
+  
+- Scraped a webpage to extract customer reviews on BA flights using Python.
+- Analyzed the data in a CSV file using the Python library NLTK to remove unnecessary qualifiers and identify keywords indicating user sentiment.
+- Loaded the cleaned dataset into a Random Forest Regressor model to predict factors influencing customer reviews, achieving 88% predictive accuracy. This analysis enabled the company to develop effective customer retention strategies.  
+
+</details>
+
+### Accenture, North America Strategy Consulting Work Simulation, The Forage  
+*December 2023*  
+<details>
+  <summary>Click me to know more!</summary>
+  
+- Evaluated a client brief to identify project priorities and reviewed a government website to develop UX/UI strategies to optimize user experience.
+- Developed a project timeline, Gantt Chart, and user stories to blueprint project deliverables and assign tasks.
+- Created correspondence with the manager to track project progress and gather feedback from stakeholders to ensure alignment with client needs.  
+
+</details>
+
+### Sports Car Price Analysis using Machine Learning  
+*October 2023 – December 2023*  
+<details>
+  <summary>Click me to know more!</summary>
+  
+- Processed over 10,000 data points of luxury vehicle features using Python.
+- Analyzed feature impact on price using R and designed a Random Forest Regressor model, achieving a perfect R-squared (R²) value of 1.00 for precise prediction of luxury sports car prices.  
+
+</details>
 
 ---
 
@@ -80,8 +133,8 @@ Let's play a quick game! Below are some clues about technologies or programming 
 <details>
   <summary>Click here to reveal the answers!</summary>
   
-  1. Java
-  2. Python
+  1. Java  
+  2. Python  
   3. Google Cloud Platform
 
 </details>
@@ -90,6 +143,5 @@ Let's play a quick game! Below are some clues about technologies or programming 
 
 ## 🌐 Let's Connect!
 
-- [LinkedIn](#)
+- [LinkedIn](https://www.linkedin.com/in/kunalsanghvii/)
 - [Portfolio](#)
-
