@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunal Sanghvi | AI / ML Engineer</title>
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-soft: #0d1830;
+      --card: rgba(255, 255, 255, 0.07);
+      --card-strong: rgba(255, 255, 255, 0.1);
+      --text: #edf2ff;
+      --muted: #a9b6d3;
+      --line: rgba(255, 255, 255, 0.12);
+      --accent: #7c9cff;
+      --accent-2: #55e6c1;
+      --glow: 0 18px 60px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(124,156,255,0.24), transparent 28%),
+        radial-gradient(circle at top right, rgba(85,230,193,0.14), transparent 24%),
+        linear-gradient(180deg, #06101d 0%, #081325 42%, #0c1730 100%);
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(var(--max), calc(100% - 28px)); margin: 0 auto; }
+    .glass {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--glow);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(6, 12, 24, 0.78);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 0;
+    }
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    section { padding: 34px 0; }
+
+    .hero {
+      padding: 56px 0 26px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .hero-copy {
+      padding: 34px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(124,156,255,0.14);
+      border: 1px solid rgba(124,156,255,0.24);
+      color: #d9e3ff;
+      font-size: 0.92rem;
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2.6rem, 5vw, 4.8rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+      max-width: 11ch;
+    }
+    .lead {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      max-width: 66ch;
+      margin: 0;
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .btn {
+      padding: 13px 18px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      font-weight: 700;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), #9c7cff);
+      border: none;
+      color: white;
+    }
+
+    .hero-side {
+      padding: 22px;
+      display: grid;
+      gap: 18px;
+    }
+    .profile-wrap {
+      overflow: hidden;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: linear-gradient(135deg, rgba(124,156,255,0.18), rgba(85,230,193,0.12));
+      min-height: 330px;
+    }
+    .profile-photo {
+      width: 100%;
+      height: 100%;
+      min-height: 330px;
+      object-fit: cover;
+    }
+    .terminal {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(5, 9, 18, 0.72);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      line-height: 1.8;
+      font-size: 0.92rem;
+      color: #dce6f5;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .stat {
+      padding: 18px;
+      text-align: center;
+    }
+    .stat h3 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .stat p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(1.6rem, 2.6vw, 2.6rem);
+      letter-spacing: -0.03em;
+    }
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 22px;
+    }
+    .card { padding: 24px; }
+    .card p, .card li { color: var(--muted); line-height: 1.75; }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .pill {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.9rem;
+      color: #dfe7f5;
+    }
+
+    .focus-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+    .bar-group { margin-top: 18px; }
+    .bar-label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      color: #dfe8fb;
+      font-size: 0.95rem;
+    }
+    .bar {
+      height: 12px;
+      width: 100%;
+      background: rgba(255,255,255,0.08);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      transform-origin: left;
+      animation: loadBar 1.5s ease forwards;
+    }
+    @keyframes loadBar {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .project-card {
+      overflow: hidden;
+      min-height: 100%;
+      transition: transform 0.22s ease;
+    }
+    .project-card:hover { transform: translateY(-6px); }
+    .project-image {
+      position: relative;
+      height: 220px;
+      background: linear-gradient(135deg, rgba(124,156,255,0.32), rgba(85,230,193,0.22));
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      overflow: hidden;
+    }
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .project-fallback {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: rgba(255,255,255,0.9);
+      background: linear-gradient(135deg, rgba(124,156,255,0.24), rgba(85,230,193,0.18));
+    }
+    .project-body { padding: 22px; }
+    .project-body h3 { margin: 0 0 12px; font-size: 1.22rem; }
+    .project-body p { margin: 0 0 14px; color: var(--muted); line-height: 1.75; }
+    .project-link {
+      display: inline-flex;
+      margin-top: 6px;
+      font-weight: 700;
+      color: #dce6ff;
+    }
+
+    .experience-grid {
+      display: grid;
+      gap: 16px;
+    }
+    .exp-card {
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 22px;
+    }
+    .exp-time {
+      color: #d6dff4;
+      font-weight: 700;
+    }
+    .exp-card h3 { margin: 0 0 4px; }
+    .exp-card h4 { margin: 0 0 10px; color: var(--accent-2); font-weight: 700; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .skill-box { padding: 22px; }
+    .skill-box h3 { margin-top: 0; }
+    .skill-box ul { margin: 0; padding-left: 18px; }
+
+    .contact-box {
+      padding: 32px;
+      text-align: center;
+    }
+    .contact-box p {
+      color: var(--muted);
+      max-width: 58ch;
+      margin: 12px auto 20px;
+      line-height: 1.75;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: var(--muted);
+      padding: 18px 0 34px;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .about-grid,
+      .focus-grid,
+      .projects,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      .exp-card {
+        grid-template-columns: 1fr;
+      }
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      h1 { max-width: none; }
+    }
+
+    @media (max-width: 640px) {
+      .stats { grid-template-columns: 1fr; }
+      .nav-inner { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">Kunal Sanghvi</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#focus">Tech Focus</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top" class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="glass hero-copy">
+          <div class="badge">AI Engineer • ML Engineer • Python-First Builder</div>
+          <h1>Designing production-ready AI, ML, and backend systems.</h1>
+          <p class="lead">
+            I’m Kunal Sanghvi, a software engineer with 3+ years of experience building scalable AI-driven systems across machine learning, NLP, RAG workflows, backend engineering, and data platforms. I focus on turning complex business problems into reliable products that perform well in production.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/kunalsanghvii/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="https://github.com/KunalSanghvii" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="mailto:kunalsanghavi08@gmail.com">Email Me</a>
+          </div>
+          <div class="stats">
+            <div class="glass stat">
+              <h3>3+</h3>
+              <p>Years experience</p>
+            </div>
+            <div class="glass stat">
+              <h3>10+</h3>
+              <p>Projects built</p>
+            </div>
+            <div class="glass stat">
+              <h3>30%</h3>
+              <p>Latency reduced</p>
+            </div>
+            <div class="glass stat">
+              <h3>45%</h3>
+              <p>Accuracy / response lift</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass hero-side">
+          <div class="profile-wrap">
+            <img class="profile-photo" src="assets/images/profile.jpg" alt="Kunal Sanghvi" />
+          </div>
+          <div class="terminal">
+            $ primary_stack<br>
+            &gt; Python, AI/ML, NLP, RAG, Backend<br><br>
+            $ current_focus<br>
+            &gt; LLM workflows, intelligent systems, scalable APIs<br><br>
+            $ strength<br>
+            &gt; translating AI ideas into production-ready products
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-head">
+        <div>
+          <h2>About Me</h2>
+          <p>A modern portfolio should show both personality and technical depth.</p>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="glass card">
+          <p>
+            I hold a Master’s in Information Systems from Pace University and bring hands-on experience across AI products, backend services, cloud platforms, and data engineering. My recent work spans GPT-based assistants, LoRA fine-tuning, quantization, RAG pipelines, analytics systems, and enterprise-grade APIs.
+          </p>
+          <p>
+            I enjoy building software that is both technically sound and useful in the real world. Whether it’s improving latency, reducing cost, or increasing model quality, I care about outcomes as much as architecture.
+          </p>
+        </div>
+        <div class="glass card">
+          <h3>What I bring</h3>
+          <div class="pill-row">
+            <span class="pill">Python</span>
+            <span class="pill">AI / ML</span>
+            <span class="pill">RAG Pipelines</span>
+            <span class="pill">LLM Workflows</span>
+            <span class="pill">NLP</span>
+            <span class="pill">Spring Boot</span>
+            <span class="pill">FastAPI</span>
+            <span class="pill">React</span>
+            <span class="pill">AWS / Azure / GCP</span>
+            <span class="pill">MLOps</span>
+            <span class="pill">Kafka</span>
+            <span class="pill">Kubernetes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus">
+      <div class="section-head">
+        <div>
+          <h2>Tech Focus</h2>
+          <p>A visual snapshot of the areas I focus on most.</p>
+        </div>
+      </div>
+      <div class="focus-grid">
+        <div class="glass card">
+          <h3>Strength areas</h3>
+          <div class="bar-group">
+            <div class="bar-label"><span>AI / Machine Learning</span><span>9.8 / 10</span></div>
+            <div class="bar"><div class="fill" style="width: 98%"></div></div>
+          </div>
+          <div class="bar-group">
+            <div class="bar-label"><span>Python</span><span>9.7 / 10</span></div>
+            <div class="bar"><div class="fill" style="width: 97%"></div></div>
+          </div>
+          <div class="bar-group">
+            <div class="bar-label"><span>NLP / LLM Workflows</span><span>9.5 / 10</span></div>
+            <div class="bar"><div class="fill" style="width: 95%"></div></div>
+          </div>
+          <div class="bar-group">
+            <div class="bar-label"><span>Backend Engineering</span><span>9.2 / 10</span></div>
+            <div class="bar"><div class="fill" style="width: 92%"></div></div>
+          </div>
+          <div class="bar-group">
+            <div class="bar-label"><span>Data Engineering / MLOps</span><span>8.9 / 10</span></div>
+            <div class="bar"><div class="fill" style="width: 89%"></div></div>
+          </div>
+        </div>
+        <div class="glass card">
+          <h3>What stands out</h3>
+          <p>
+            My portfolio is strongest where AI and engineering meet: building intelligent assistants, productionizing ML systems, optimizing inference, and exposing that capability through stable, scalable backend services.
+          </p>
+          <p>
+            I especially enjoy work that combines Python, applied ML, NLP, agentic workflows, and system design. That combination lets me move from experimentation to real deployment without losing product quality.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-head">
+        <div>
+          <h2>Featured Projects</h2>
+          <p>I’ve built 10+ projects across AI, analytics, and full-stack systems. These are three highlighted ones.</p>
+        </div>
+      </div>
+      <div class="projects">
+        <article class="glass project-card">
+          <div class="project-image">
+            <img src="assets/images/project-nyc-job.jpg" alt="NYC job market analysis" />
+            <div class="project-fallback">NYC Job Market Analysis</div>
+          </div>
+          <div class="project-body">
+            <h3>NYC Job Market Analysis</h3>
+            <p>
+              Built a machine learning solution on 1M+ salary records to uncover market trends, predict compensation patterns, and identify the strongest drivers behind regional hiring insights.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Python</span>
+              <span class="pill">Machine Learning</span>
+              <span class="pill">Analytics</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="glass project-card">
+          <div class="project-image">
+            <img src="assets/images/project-stock-analysis.jpg" alt="Real-time stock analysis project" />
+            <div class="project-fallback">Real-Time Stock Analysis</div>
+          </div>
+          <div class="project-body">
+            <h3>Real-Time Stock Analysis</h3>
+            <p>
+              Created a real-time stock analysis system combining time-series forecasting with sentiment signals, making it easier to connect market movement with news and public sentiment.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Python</span>
+              <span class="pill">Time Series</span>
+              <span class="pill">Sentiment Analysis</span>
+            </div>
+            <a class="project-link" href="https://github.com/KunalSanghvii/Real-Time-Stock-Analysis-using-Time-Series-and-Sentiment-Analysis" target="_blank" rel="noreferrer">View on GitHub →</a>
+          </div>
+        </article>
+
+        <article class="glass project-card">
+          <div class="project-image">
+            <img src="assets/images/project-spotify.jpg" alt="Spotify-style platform" />
+            <div class="project-fallback">Spotify-Style Platform</div>
+          </div>
+          <div class="project-body">
+            <h3>Spotify-Style Platform</h3>
+            <p>
+              Worked on a Spotify-inspired community platform with scalable backend logic, API integration, UI alignment, and database tuning that supported growth to 100K+ users.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Django</span>
+              <span class="pill">REST APIs</span>
+              <span class="pill">SQL</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-head">
+        <div>
+          <h2>Experience</h2>
+          <p>Selected highlights from recent roles.</p>
+        </div>
+      </div>
+      <div class="experience-grid">
+        <div class="glass exp-card">
+          <div class="exp-time">Aug 2024 — Present</div>
+          <div>
+            <h3>Unique Designs, USA</h3>
+            <h4>Software Engineer</h4>
+            <p>
+              Built GPT-based virtual assistants using LoRA fine-tuning and quantization, cutting response latency by 30%. Developed full-stack AI systems with RAG pipelines, vector databases, Java/Spring Boot services, React dashboards, and production deployment workflows across cloud-native infrastructure.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass exp-card">
+          <div class="exp-time">May 2024 — Aug 2024</div>
+          <div>
+            <h3>Rebel, New York</h3>
+            <h4>Software Engineer & Product Management Intern</h4>
+            <p>
+              Led a team of six developers to improve backend schema design, API quality, and UI alignment for a Spotify-style platform. Optimized queries and indexing to cut response time by 50% and support 100K+ users.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass exp-card">
+          <div class="exp-time">Apr 2021 — Nov 2022</div>
+          <div>
+            <h3>TCS / Equifax</h3>
+            <h4>Software Engineer</h4>
+            <p>
+              Developed backend services and secure data pipelines for large-scale credit platforms. Improved migration efficiency by about 70%, built Airflow workflows on GCP, and strengthened search and analytics performance through better data modeling and system optimization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-head">
+        <div>
+          <h2>Skills</h2>
+          <p>Grouped for quick recruiter scanning.</p>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="glass skill-box">
+          <h3>Core</h3>
+          <ul>
+            <li>Python</li>
+            <li>AI / ML</li>
+            <li>NLP</li>
+            <li>RAG</li>
+            <li>LLMs</li>
+          </ul>
+        </div>
+        <div class="glass skill-box">
+          <h3>Backend</h3>
+          <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>FastAPI</li>
+            <li>Django</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="glass skill-box">
+          <h3>Data / ML Stack</h3>
+          <ul>
+            <li>PyTorch</li>
+            <li>TensorFlow</li>
+            <li>Scikit-learn</li>
+            <li>Pandas</li>
+            <li>spaCy / NLTK</li>
+          </ul>
+        </div>
+        <div class="glass skill-box">
+          <h3>Cloud / Tools</h3>
+          <ul>
+            <li>AWS</li>
+            <li>Azure</li>
+            <li>GCP</li>
+            <li>Docker / Kubernetes</li>
+            <li>GitHub Actions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="glass contact-box">
+        <h2>Let’s Build Something Great</h2>
+        <p>
+          I’m interested in AI, ML, backend, and software engineering opportunities where I can build intelligent systems that create measurable business impact.
+        </p>
+        <div class="cta-row" style="justify-content:center;">
+          <a class="btn btn-primary" href="mailto:kunalsanghavi08@gmail.com">kunalsanghavi08@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/kunalsanghvii/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="https://github.com/KunalSanghvii" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Kunal Sanghvi • Portfolio</div>
+  </footer>
+</body>
+</html>
